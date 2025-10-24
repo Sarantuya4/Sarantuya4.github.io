@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500;700&family=Open+Sans:wght@400;600&display=swap');
+body {
+  background-image: url("background.jpg");
+  background-size: cover;       
+  background-position: center; 
+}
+.nuur {
+  position: relative;
+  background-image: url("cv.jpg.jpg");
+  background-size: contain;   
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 1000px;               /* өөрийн хүссэн өргөнийг заа */
+  height: 700px;              /* өөрийн хүссэн өндрийг заа */
+  margin: 0 auto;             /* дэлгэцийн төвд */
+}
+.text {
+  position: absolute;
+  top: 70px;     /* дээд талаас */
+  left:480px;    /* зүүн талаас */
+  text-align: left;
+  font-family: 'comfortaa';
+  color:goldenrod ;
+}
+
+.text h1 {
+  font-size: 19px;
+  font-style: oblique;  /* бага зэрэг хазайсан хэв маяг */
+  margin: 0;
+}
+
+.text p {
+  font-style: italic;
+  font-size: 15px;
+  margin-top: 5px;
+  color: goldenrod;
+}
+.contacts {
+  font-size: 12px;
+  color: black;
+  line-height: 1.5; /* мөр хоорондын зай */
+}
+.contacts p {
+  margin: 4px 0;
+  font-size: 14px;
+  color: black;
+}
+
+/* ур чадварын гарчиг */
+.contacts h3,
+.skills h3,
+.cando h3,
+.about h3,
+.qualities h3,
+.portfolio h3 {
+  font-family: 'Caveat', cursive;
+  font-size: 20px;
+  margin-bottom: 2px;
+  color: black;
+}
+
+/* Ур чадварын icon */
+.icons img {
+  width: 40px;
+  margin-right: 5px;
+}
+
+/* ур чадварын түвшин */
+
+/* Хийж чаддаг зүйлс */
+.cando {
+  font-size: 12px;
+  color: black;
+  line-height: 1.5; /* мөр хоорондын зай */
+}
+.cando ul {
+  list-style: none; /* цэгүүдийг арилгана */
+  padding: 0;
+}
+.cando li::before {
+  content: " 🌸"; 
+  color: #bfa16a;
+}
+.right {
+  position: absolute;
+  top: 60px;     /* дээд талаас */
+  left:580px;    /* зүүн талаас */
+  color: black;
+  text-align: left;
+}
+.right img {
+  width: 140px;
+  display: block;
+  margin-bottom: 10px
+}
+.right_text {
+  position: absolute;
+  top: 220px;     /* дээд талаас */
+  left:550px;    /* зүүн талаас */
+  color: black;
+  text-align: left;
+}
+.about p {
+  font-size: 12px;
+  color: black;
+  line-height: 1; /* мөр хоорондын зай */
+}
+
+/* чанаруудын жагсаалт */
+.qualities{
+  font-size: 12px;
+  color: black;
+  line-height: 1.5; /* мөр хоорондын зай */
+}
+.qualities ul {
+  list-style: none;
+  padding: 0;
+}
+.qualities li::before {
+  content: " 🌸"; 
+  color: #bfa16a;
+}
+.box{
+  backdrop-filter: blur(2px);          /* дэвсгэрийг үл ялиг бүдгэрүүлнэ (дэмждэг бол) */
+  border: 1px solid rgba(214,179,112,0.35); /* алтлагдуу хүрээ */
+  border-radius: 45px;
+  padding: 10px 15px;
+  margin-left: 8px;
+  margin-right: 8px
+}
+.tags span {
+  background: rgba(255,255,255,0.5);
+  border: 1px solid #e3c3ff;
+  border-radius: 10px;
+  padding: 3px 10px;
+  margin: 3px;
+  display: inline-block;
+  font-size: 14px;
+  color: #7b3fa1;
+  transition: 0.3s;
+}
+.tags span:hover {
+  background: #f8e6ff;
+  transform: scale(1.05);
+}

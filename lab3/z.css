@@ -1,0 +1,177 @@
+body {
+  margin: 0;
+  font-family: Tahoma, Arial, sans-serif;
+  background-color: #e7ebf2;
+  font-size: 13px;
+}
+
+/* Header */
+.header {
+  background-color: #3b5998;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+}
+
+.header-left img {
+  height: 100px;
+  width: auto;
+}
+
+.header-right h1 {
+  font-family: Tahoma, Verdana, Arial, sans-serif;
+  font-weight: bold;
+  color: #1E90FF;
+  font-size: 50px;
+  margin: 0 200px;
+  padding: 0;
+  letter-spacing: 1px;
+}
+
+.header-links {
+  font-size: 12px;
+  margin: 0 200px;
+  padding: 0;
+}
+
+.header-links a {
+  color: white;
+  text-decoration: none;
+  margin: 0 3px;
+}
+
+.header-links a:hover {
+  text-decoration: underline;
+}
+
+/* Left column */
+.left-column {
+  width: 250px;
+  border-right: 1px solid #a0a9c0;
+  padding: 10px;
+  background-color: #f7f7ff;
+  float: left;
+}
+
+.search-box {
+  margin-bottom: 10px;
+}
+
+.search-input {
+  width: 130px;
+  height: 18px;
+  border: 1px solid #aaa;
+}
+
+.go-btn {
+  height: 22px;
+  background-color: dodgerblue;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.menu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 0 15px 0;
+  line-height: 1.7;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #3b5998;
+}
+
+.menu a:hover {
+  text-decoration: underline;
+}
+
+/* Profile section */
+.profile-section {
+  display: flex;
+  justify-content: flex-start;
+  background-color: white;
+  border: 1px solid #a0a9c0;
+  padding: 15px;
+  margin-left: 270px; /* зүүн талын box-ноос хойш байрлах */
+  margin-top: 10px;
+  margin-right: 20px;
+  gap: 10px; /* хоорондын зай багасгасан */
+}
+
+/* Left profile content */
+.profile-left {
+  width: 240px;
+  margin-right: 10px;
+}
+
+.profile-picture img {
+  width: 100%;
+  border: 1px solid #ccc;
+}
+
+.profile-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 10px;
+}
+
+.profile-buttons button {
+  background-color: #e7ebf2;
+  border: 1px solid #a0a9c0;
+  padding: 4px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.profile-buttons button:hover {
+  background-color: #dce3f0;
+}
+
+.profile-box {
+  border: 1px solid #a0a9c0;
+  margin-top: 10px;
+  padding: 5px;
+  background-color: #f7f7ff;
+}
+
+.profile-box h4 {
+  margin: 0 0 5px 0;
+  color: #3b5998;
+}
+
+/* Right profile info */
+.profile-right {
+  flex: 1;
+  border-left: 1px solid #a0a9c0;
+  padding-left: 10px;
+}
+
+.info-box {
+  border: 1px solid #a0a9c0;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #f9f9ff;
+}
+
+.info-box h3 {
+  margin: 0 0 10px 0;
+  color: #3b5998;
+  font-size: 14px;
+}
+
+.info-box span {
+  font-weight: normal;
+  color: #666;
+  font-size: 12px;
+}
+
+.info-box p {
+  margin: 3px 0;
+  font-size: 13px;
+}
+

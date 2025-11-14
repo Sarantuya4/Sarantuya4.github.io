@@ -36,7 +36,7 @@ body {
 }
 .Hello {
   font-size: clamp(20px, 3.6vw, 65px);
-  margin-bottom: 8px;
+  margin-bottom: 20px;
 }
 
 .btn-pink {
@@ -56,6 +56,7 @@ body {
 .five.columns { float: right; width: 40%; background: white; }
 
 .Head {
+  margin-top: 25px;
   padding: 8px 15px 25px;
   color: black;
   font-family: 'Lato', sans-serif;
@@ -250,4 +251,14 @@ body {
   .Garchig { text-align:center; }
   .btn-pink { margin:auto; display:block; }
   .poll-box { max-width:100%; }
+}
+@media (max-width: 768px) {
+  .Head {
+    margin-top: 25px !important;
+  }
+}
+@media (max-width: 600px) {
+  .divider {
+    margin-top: 30px !important;
+  }
 }

@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>NASA Homepage Clone (Flexbox)</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ========= TOP NAV BAR ========= -->
+  <header class="topbar">
+    <div class="topbar-left">
+      <button class="explore-btn">Explore ▾</button>
+    </div>
+
+    <div class="topbar-center">
+      <input type="text" class="search-input" placeholder="Search..." />
+    </div>
+
+    <div class="topbar-right">
+      <nav class="top-nav">
+        <a href="#">News &amp; Events ▾</a>
+        <a href="#">Multimedia ▾</a>
+        <a href="#" class="nasa-plus">NASA+ <span class="live-pill">LIVE</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ========= HERO: 25 YEARS ========= -->
+    <section class="hero hero-main">
+      <div class="hero-overlay">
+        <div class="hero-logo">
+          <!-- хүсвэл энд NASA лого зураг оруулж болно -->
+          NASA
+        </div>
+
+        <div class="hero-main-content">
+          <div class="hero-text">
+            <h1>25 Years of<br>Scientific Discovery</h1>
+            <p>
+              November marks 25 years of human presence aboard the International
+              Space Station. Since the first crew arrived on Nov. 2, 2000, NASA
+              and its partners have conducted thousands of research investigations
+              to advance exploration of the Moon and Mars and benefit life on Earth.
+            </p>
+            <button class="btn btn-red">
+              International Space Station
+            </button>
+          </div>
+        </div>
+
+        <div class="hero-links-row">
+          <div class="hero-link">
+            <span class="hero-link-label">MISSION COVERAGE</span>
+            <span class="hero-link-text">NASA Astronaut to Join Expedition 73</span>
+          </div>
+          <div class="hero-link">
+            <span class="hero-link-label">SPACE STATION BLOG</span>
+            <span class="hero-link-text">Off the Earth, For the Earth</span>
+          </div>
+          <div class="hero-link">
+            <span class="hero-link-label">SPACE STATION SCIENCE</span>
+            <span class="hero-link-text">Your Orbiting Laboratory</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========= FEATURED NEWS ========= -->
+    <section class="featured">
+  <div class="featured-header">
+    <h2>Featured News</h2>
+    <a href="#" class="featured-right-link">Recently Published ➜</a>
+  </div>
+
+  <!-- ДЭЭД 3 КАРТ -->
+  <div class="featured-grid">
+    <!-- Зүүн том карт -->
+    <article class="feat-card feat-card-large feat-1">
+      <div class="feat-text">
+        <p class="feat-meta">BLOG • 2 MIN READ</p>
+        <h3>NASA’s OSIRIS-APEX Spacecraft Slingshots Past Earth</h3>
+      </div>
+    </article>
+
+    <!-- Дунд том карт -->
+    <article class="feat-card feat-card-large feat-2">
+      <div class="feat-text">
+        <p class="feat-meta">BLOG • 4 MIN READ</p>
+        <h3>Crew Works Wide Variety of Research and Awaits New Arrivals</h3>
+      </div>
+    </article>
+
+    <!-- Баруун багана – 2 жижиг карт -->
+    <div class="feat-column-small">
+      <article class="feat-card feat-small feat-3">
+        <div class="feat-text">
+          <p class="feat-meta">ARTICLE • 3 MIN READ</p>
+          <h3>CHAPEA Crew Begins Second Mission in Mars Habitat</h3>
+        </div>
+      </article>
+
+      <article class="feat-card feat-small feat-4">
+        <div class="feat-text">
+          <p class="feat-meta">BLOG • 2 MIN READ</p>
+          <h3>NASA’s TROPICS Completes Storm-Studying Mission</h3>
+        </div>
+      </article>
+    </div>
+  </div>
+
+  <!-- ДООД БӨГЖТЭЙ ЖИЖИГ ЛИНКҮҮД -->
+  <div class="featured-bottom-row">
+    <article class="feat-bottom-item">
+      <div class="feat-bottom-thumb"></div>
+      <div class="feat-bottom-text">
+        <p class="feat-meta">5 MIN READ</p>
+        <h4>NASA Orbiter Shines New Light on Long-Running Martian Mystery</h4>
+        <p class="feat-tag">ARTICLE</p>
+      </div>
+    </article>
+
+    <article class="feat-bottom-item">
+      <div class="feat-bottom-thumb"></div>
+      <div class="feat-bottom-text">
+        <p class="feat-meta">2 MIN READ</p>
+        <h4>NASA’s Mars-bound ESCAPADE Mission Captures First ‘Selfies’</h4>
+        <p class="feat-tag">BLOG</p>
+      </div>
+    </article>
+
+    <article class="feat-bottom-item">
+      <div class="feat-bottom-thumb"></div>
+      <div class="feat-bottom-text">
+        <p class="feat-meta">5 MIN READ</p>
+        <h4>NASA, NOAA Rank 2025 Ozone Hole as Fifth Smallest Since 1992</h4>
+        <p class="feat-tag">ARTICLE</p>
+      </div>
+    </article>
+
+    <article class="feat-bottom-item">
+      <div class="feat-bottom-thumb"></div>
+      <div class="feat-bottom-text">
+        <p class="feat-meta">3 MIN READ</p>
+        <h4>What’s Up: November 2025 Skywatching Tips from NASA</h4>
+        <p class="feat-tag">ARTICLE</p>
+      </div>
+    </article>
+  </div>
+</section>
+
+    <!-- ========= HERO: BUILDING ROMAN ========= -->
+    <section class="hero hero-roman">
+      <div class="hero-roman-overlay">
+        <div class="hero-text hero-roman-text">
+          <h1>Building Roman</h1>
+          <p>
+            NASA’s nearly complete Nancy Grace Roman Space Telescope has
+            made another set of critical strides toward launch. Recent tests
+            ensure the mission will be ready for its journey.
+          </p>
+          <button class="link-arrow">
+            Nancy Grace Roman Space Telescope ➜
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========= WELCOME TO THE UNIVERSE ========= -->
+    <section class="universe">
+      <div class="section-header">
+        <h2>Welcome to the Universe</h2>
+        <a href="#" class="link-arrow">Discover More ➜</a>
+      </div>
+
+      <div class="card-row">
+        <article class="universe-card" style="background-image: url('univ1.png');">
+          <h3>Exoplanets</h3>
+        </article>
+        <article class="universe-card" style="background-image: url('univ2.jpg');">
+          <h3>Dark Matter &amp; Dark Energy</h3>
+        </article>
+        <article class="universe-card" style="background-image: url('univ3.jpeg');">
+          <h3>Telescopes 101</h3>
+        </article>
+        <article class="universe-card" style="background-image: url('univ4.png');">
+          <h3>Eyes</h3>
+        </article>
+      </div>
+    </section>
+
+    <!-- ========= IMAGE OF THE DAY ========= -->
+    <section class="image-of-day">
+      <div class="iod-text">
+        <p class="iod-label">TODAY</p>
+        <h2>Image Of The Day</h2>
+        <h3>Red Spider Nebula</h3>
+        <p>
+          Using its Near-Infrared Camera, NASA’s James Webb Space Telescope
+          has revealed never-before-seen details in the picturesque Red Spider Nebula
+          with a rich backdrop of thousands of stars.
+        </p>
+        <a href="#" class="link-arrow">Browse Image Archive ➜</a>
+      </div>
+      <div class="iod-image">
+        <img src="potm2510a.jpg" alt="Red Spider Nebula">
+      </div>
+    </section>
+
+    <!-- ========= IMAGE GALLERIES ========= -->
+    <section class="image-galleries">
+      <div class="section-header">
+        <h2>Image Galleries</h2>
+        <a href="#" class="link-arrow">More NASA Images ➜</a>
+      </div>
+
+      <div class="gallery-row">
+        <article class="gallery-card">
+          <div class="gallery-thumb" style="background-image: url('gallery1.png');"></div>
+          <h3>Artemis II Crew Gallery</h3>
+          <p class="gallery-meta">24 IMAGES</p>
+        </article>
+        <article class="gallery-card">
+          <div class="gallery-thumb" style="background-image: url('gallery2.png');"></div>
+          <h3>NASA’s Orion Spacecraft Gallery</h3>
+          <p class="gallery-meta">12 IMAGES</p>
+        </article>
+        <article class="gallery-card">
+          <div class="gallery-thumb" style="background-image: url('gallery3.png');"></div>
+          <h3>Space Launch System Rocket Gallery</h3>
+          <p class="gallery-meta">12 IMAGES</p>
+        </article>
+        
+      </div>
+    </section>
+
+    <!-- ========= NEWSLETTER BANNER ========= -->
+    <section class="newsletter-banner">
+      <div class="newsletter-overlay">
+        <div class="newsletter-text">
+          <h2>Explore the Universe from your Inbox</h2>
+          <p>
+            Stay up-to-date on the latest news from NASA – from Earth to the Moon,
+            the Solar System and beyond.
+          </p>
+          <a href="#" class="link-arrow">Sign Up ➜</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========= ARTEMIS / SEND YOUR NAME ========= -->
+    <section class="artemis">
+      <div class="artemis-text">
+        <p class="artemis-label">Artemis</p>
+        <h2>Send Your Name Around the Moon</h2>
+        <p>
+          Artemis II will test NASA’s deep space capabilities as humans fly on the
+          Space Launch System rocket and Orion spacecraft for the first time.
+          Join the mission by launching your name around the Moon.
+        </p>
+        <a href="#" class="link-arrow">Artemis II Boarding Pass ➜</a>
+      </div>
+      <div class="artemis-image">
+        <img src="artemis.png" alt="Artemis launch system">
+      </div>
+    </section>
+
+    <!-- ========= MORE TOPICS FROM NASA ========= -->
+    <section class="more-topics">
+      <h2>More Topics from NASA</h2>
+      <div class="topics-grid">
+        <article class="topic-card" style="background-image: url('topic-missions.png');">
+          <h3>Missions</h3>
+        </article>
+        <article class="topic-card" style="background-image: url('topic-humans.png');">
+          <h3>Humans in Space</h3>
+        </article>
+        <article class="topic-card" style="background-image: url('topic-earth.jpg');">
+          <h3>Earth</h3>
+        </article>
+        <article class="topic-card" style="background-image: url('topic-solar.png');">
+          <h3>Our Solar System</h3>
+        </article>
+        <article class="topic-card" style="background-image: url('topic-universe.png');">
+          <h3>Universe</h3>
+        </article>
+        <article class="topic-card" style="background-image: url('topic-science.png');">
+          <h3>Science Missions</h3>
+        </article>
+        <article class="topic-card" style="background-image: url('topic-aero.png');">
+          <h3>Aeronautics</h3>
+        </article>
+        <article class="topic-card" style="background-image: url('topic-tech.png');">
+          <h3>Technology</h3>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========= FOOTER ========= -->
+  <footer class="footer-main">
+    <div class="footer-top">
+      <div class="footer-col footer-about">
+        <div class="footer-logo">NASA</div>
+        <h3>National Aeronautics and Space Administration</h3>
+        <p>
+          NASA explores the unknown in air and space, innovates for the benefit of
+          humanity, and inspires the world through discovery.
+        </p>
+        <a href="#" class="footer-link">About NASA’s Mission</a><br>
+        <a href="#" class="footer-link">Join Us ➜</a>
+      </div>
+
+      <div class="footer-col">
+        <ul>
+          <li>Home</li>
+          <li>News &amp; Events</li>
+          <li>Multimedia</li>
+          <li>NASA+ LIVE</li>
+          <li>Missions</li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <ul>
+          <li>Humans in Space</li>
+          <li>Earth</li>
+          <li>The Solar System</li>
+          <li>The Universe</li>
+          <li>Science</li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <ul>
+          <li>Aeronautics</li>
+          <li>Technology</li>
+          <li>Learning Resources</li>
+          <li>About NASA</li>
+          <li>NASA en Español</li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-social">
+        <h4>Follow NASA</h4>
+        <div class="social-row">
+          <span>●</span><span>●</span><span>●</span><span>●</span>
+        </div>
+        <a href="#" class="footer-link">More NASA Social Accounts</a><br>
+        <a href="#" class="footer-link">NASA Newsletters</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="footer-bottom-links">
+        <a href="#">Sitemap</a>
+        <a href="#">For Media</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">FOIA</a>
+        <a href="#">No FEAR Act</a>
+        <a href="#">Budget &amp; Reports</a>
+        <a href="#">Contact NASA</a>
+      </div>
+      <p class="footer-meta">
+        Page Last Updated: Nov 25, 2025 &nbsp;|&nbsp;
+        Page Editor: Your Name Here
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>

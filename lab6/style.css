@@ -109,7 +109,7 @@ main {
 
 .hero-main {
   min-height: 80vh;
-  background-image: url("nasa.jpg");
+  background-image: url("background.jpg");
   background-size: cover;
   background-position: center;
   color: #fff;

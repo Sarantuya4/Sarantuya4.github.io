@@ -129,11 +129,20 @@ main {
   justify-content: space-between;
 }
 
+/* ЛОГО – дунд төвлөрүүлсэн */
 .hero-logo {
   align-self: center;
-  font-weight: 800;
-  letter-spacing: 3px;
   margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* NASA logo зураг */
+.logo-img {
+  width: 80px;    /* хүсвэл 100, 120 болгож болно */
+  height: auto;
+  display: block;
 }
 
 .hero-main-content {
@@ -697,10 +706,11 @@ main {
   max-width: 320px;
 }
 
+/* Footer лого текст биш болсон тул зөвхөн layout үлдээв */
 .footer-logo {
-  font-weight: 900;
-  letter-spacing: 3px;
   margin-bottom: 8px;
+  display: flex;
+  justify-content: center;
 }
 
 .footer-about h3 {

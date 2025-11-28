@@ -1,36 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="mn">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <title>NASA Homepage Clone – Space News & Images (Lab 6)</title>
 
-  <!-- Basic SEO -->
-  <meta name="description" content="NASA.gov-оос сэдэвлэсэн сансар огторгуйн нүүр хуудас. Featured news, image of the day, Artemis missions, space topics, галерей, бүгд Flexbox layout ашиглан хийгдсэн." />
-  <meta name="keywords" content="NASA, space, astronomy, lab6, flexbox, homepage clone, science, universe" />
+  <!-- SEO үндсэн -->
+  <meta name="description" content="NASA.gov-оос сэдэвлэсэн сансар огторгуйн нүүр хуудас. Featured news, Image of the day, Artemis missions, сансар огторгуйн сэдвүүд, галерей, бүгд Flexbox layout ашиглан хийгдсэн." />
+  <meta name="keywords" content="NASA, space, astronomy, lab6, flexbox, homepage clone, science, universe, артемис, сансар" />
   <meta name="robots" content="index,follow" />
-  <meta name="author" content="D. Sarantuya" />
-  <meta name="language" content="en" />
+  <meta name="author" content="Д.Сарантуяа" />
 
-  <!-- Canonical URL (GitHub Pages чинь ийм замтай гэж үзлээ) -->
+  <!-- Canonical URL -->
   <link rel="canonical" href="https://sarantuya4.github.io/lab6/" />
 
-  <!-- Social / Open Graph -->
-  <meta property="og:title" content="NASA Homepage Clone – Space News & Images (Lab 6)" />
-  <meta property="og:description" content="Featured news, Image of the Day, Artemis missions, сансар огторгуйн олон төрлийн агуулгыг Flexbox layout ашиглан харуулсан нэг нүүр хуудас." />
+  <!-- Open Graph (Facebook, etc.) -->
+  <meta property="og:title" content="NASA Homepage Clone – Space News & Images" />
+  <meta property="og:description" content="Flexbox ашигласан сансар огторгуйн нүүр хуудасны төсөл – NASA शैलीтэй." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://sarantuya4.github.io/lab6/" />
-  <meta property="og:image" content="https://sarantuya4.github.io/lab6/nasa.jpg" />
-  <meta property="og:locale" content="en_US" />
+  <meta property="og:image" content="https://sarantuya4.github.io/lab6/background.jpg" />
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="NASA Homepage Clone – Space News & Images (Lab 6)" />
-  <meta name="twitter:description" content="NASA.gov-оос санаа авч хийсэн сансар огторгуйн нүүр хуудас – featured news, image of the day, Artemis, topics ба бусад." />
-  <meta name="twitter:image" content="https://sarantuya4.github.io/lab6/nasa.jpg" />
+  <meta name="twitter:title" content="NASA Homepage Clone – Space News & Images" />
+  <meta name="twitter:description" content="Flexbox ашигласан NASA төрхтэй сансар огторгуйн нүүр хуудас." />
+  <meta name="twitter:image" content="https://sarantuya4.github.io/lab6/background.jpg" />
 
-  <!-- favicon -->
+  <!-- Favicon -->
   <link rel="icon" type="image/png" href="nasa-logo.png" />
 
   <link rel="stylesheet" href="style.css" />
@@ -40,19 +38,27 @@
   <!-- ========= TOP NAV BAR ========= -->
   <header class="topbar">
     <div class="topbar-left">
-      <button class="explore-btn">Explore ▾</button>
+      <button class="explore-btn" type="button">Explore ▾</button>
     </div>
 
     <div class="topbar-center">
-      <label class="visually-hidden" for="site-search">Search</label>
-      <input id="site-search" type="text" class="search-input" placeholder="Search..." />
+      <label for="site-search" class="visually-hidden">Сайт дотроос хайх</label>
+      <input
+        id="site-search"
+        type="search"
+        class="search-input"
+        placeholder="Search..."
+        name="q"
+      />
     </div>
 
     <div class="topbar-right">
       <nav class="top-nav" aria-label="Main navigation">
-        <a href="#">News &amp; Events ▾</a>
-        <a href="#">Multimedia ▾</a>
-        <a href="#" class="nasa-plus">NASA+ <span class="live-pill">LIVE</span></a>
+        <a href="#featured">News &amp; Events ▾</a>
+        <a href="#galleries">Multimedia ▾</a>
+        <a href="#more-topics" class="nasa-plus">
+          NASA+ <span class="live-pill">LIVE</span>
+        </a>
       </nav>
     </div>
   </header>
@@ -62,13 +68,13 @@
     <!-- ========= HERO: 25 YEARS ========= -->
     <section class="hero hero-main" aria-labelledby="hero-title">
       <div class="hero-overlay">
-        <div class="hero-logo">
+        <div class="hero-logo" aria-hidden="true">
           <img src="nasa-logo.png" alt="NASA logo" class="logo-img">
         </div>
 
         <div class="hero-main-content">
           <div class="hero-text">
-            <!-- Нүүр хуудасны үндсэн ганц H1 -->
+            <!-- Нүүр хуудасны ҮНДСЭН ганц H1 -->
             <h1 id="hero-title">25 Years of<br>Scientific Discovery</h1>
             <p>
               November marks 25 years of human presence aboard the International
@@ -82,7 +88,7 @@
           </div>
         </div>
 
-        <div class="hero-links-row">
+        <div class="hero-links-row" aria-label="Space station links">
           <div class="hero-link">
             <span class="hero-link-label">MISSION COVERAGE</span>
             <span class="hero-link-text">NASA Astronaut to Join Expedition 73</span>
@@ -100,7 +106,7 @@
     </section>
 
     <!-- ========= FEATURED NEWS ========= -->
-    <section class="featured" aria-labelledby="featured-title">
+    <section id="featured" class="featured" aria-labelledby="featured-title">
       <div class="featured-header">
         <h2 id="featured-title">Featured News</h2>
         <a href="#" class="featured-right-link">Recently Published ➜</a>
@@ -143,7 +149,7 @@
       </div>
 
       <!-- ДООД БӨГЖТЭЙ ЖИЖИГ ЛИНКҮҮД -->
-      <div class="featured-bottom-row">
+      <div class="featured-bottom-row" aria-label="Short articles list">
         <article class="feat-bottom-item">
           <div class="feat-bottom-thumb" aria-hidden="true"></div>
           <div class="feat-bottom-text">
@@ -223,10 +229,10 @@
     </section>
 
     <!-- ========= IMAGE OF THE DAY ========= -->
-    <section class="image-of-day" aria-labelledby="iod-title">
+    <section class="image-of-day" aria-labelledby="image-of-day-title">
       <div class="iod-text">
         <p class="iod-label">TODAY</p>
-        <h2 id="iod-title">Image Of The Day</h2>
+        <h2 id="image-of-day-title">Image Of The Day</h2>
         <h3>Red Spider Nebula</h3>
         <p>
           Using its Near-Infrared Camera, NASA’s James Webb Space Telescope
@@ -241,7 +247,7 @@
     </section>
 
     <!-- ========= IMAGE GALLERIES ========= -->
-    <section class="image-galleries" aria-labelledby="galleries-title">
+    <section id="galleries" class="image-galleries" aria-labelledby="galleries-title">
       <div class="section-header">
         <h2 id="galleries-title">Image Galleries</h2>
         <a href="#" class="link-arrow">More NASA Images ➜</a>
@@ -249,17 +255,17 @@
 
       <div class="gallery-row">
         <article class="gallery-card">
-          <div class="gallery-thumb" style="background-image: url('gallery1.png');"></div>
+          <div class="gallery-thumb" style="background-image: url('gallery1.png');" role="img" aria-label="Artemis II crew gallery"></div>
           <h3>Artemis II Crew Gallery</h3>
           <p class="gallery-meta">24 IMAGES</p>
         </article>
         <article class="gallery-card">
-          <div class="gallery-thumb" style="background-image: url('gallery2.png');"></div>
+          <div class="gallery-thumb" style="background-image: url('gallery2.png');" role="img" aria-label="Orion spacecraft gallery"></div>
           <h3>NASA’s Orion Spacecraft Gallery</h3>
           <p class="gallery-meta">12 IMAGES</p>
         </article>
         <article class="gallery-card">
-          <div class="gallery-thumb" style="background-image: url('gallery3.png');"></div>
+          <div class="gallery-thumb" style="background-image: url('gallery3.png');" role="img" aria-label="Space Launch System rocket gallery"></div>
           <h3>Space Launch System Rocket Gallery</h3>
           <p class="gallery-meta">12 IMAGES</p>
         </article>
@@ -298,7 +304,7 @@
     </section>
 
     <!-- ========= MORE TOPICS FROM NASA ========= -->
-    <section class="more-topics" aria-labelledby="topics-title">
+    <section id="more-topics" class="more-topics" aria-labelledby="topics-title">
       <h2 id="topics-title">More Topics from NASA</h2>
       <div class="topics-grid">
         <article class="topic-card" style="background-image: url('topic-missions.png');">
@@ -334,7 +340,9 @@
   <footer class="footer-main">
     <div class="footer-top">
       <div class="footer-col footer-about">
-        <div class="footer-logo" aria-label="NASA logo in footer">NASA</div>
+        <div class="footer-logo">
+          <img src="nasa-logo.png" alt="NASA text logo" class="logo-img">
+        </div>
         <h3>National Aeronautics and Space Administration</h3>
         <p>
           NASA explores the unknown in air and space, innovates for the benefit of

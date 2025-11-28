@@ -3,13 +3,34 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>NASA Homepage Clone – Space News & Images (Lab 6)</title>
 
+  <!-- Basic SEO -->
   <meta name="description" content="NASA.gov-оос сэдэвлэсэн сансар огторгуйн нүүр хуудас. Featured news, image of the day, Artemis missions, space topics, галерей, бүгд Flexbox layout ашиглан хийгдсэн." />
   <meta name="keywords" content="NASA, space, astronomy, lab6, flexbox, homepage clone, science, universe" />
   <meta name="robots" content="index,follow" />
+  <meta name="author" content="D. Sarantuya" />
+  <meta name="language" content="en" />
 
-  <!-- favicon (жижиг лого) – өөрийн дуртай жижиг зургийг ашиглаж болно -->
+  <!-- Canonical URL (GitHub Pages чинь ийм замтай гэж үзлээ) -->
+  <link rel="canonical" href="https://sarantuya4.github.io/lab6/" />
+
+  <!-- Social / Open Graph -->
+  <meta property="og:title" content="NASA Homepage Clone – Space News & Images (Lab 6)" />
+  <meta property="og:description" content="Featured news, Image of the Day, Artemis missions, сансар огторгуйн олон төрлийн агуулгыг Flexbox layout ашиглан харуулсан нэг нүүр хуудас." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://sarantuya4.github.io/lab6/" />
+  <meta property="og:image" content="https://sarantuya4.github.io/lab6/nasa.jpg" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="NASA Homepage Clone – Space News & Images (Lab 6)" />
+  <meta name="twitter:description" content="NASA.gov-оос санаа авч хийсэн сансар огторгуйн нүүр хуудас – featured news, image of the day, Artemis, topics ба бусад." />
+  <meta name="twitter:image" content="https://sarantuya4.github.io/lab6/nasa.jpg" />
+
+  <!-- favicon -->
   <link rel="icon" type="image/png" href="nasa-logo.png" />
 
   <link rel="stylesheet" href="style.css" />
@@ -23,7 +44,8 @@
     </div>
 
     <div class="topbar-center">
-      <input type="text" class="search-input" placeholder="Search..." />
+      <label class="visually-hidden" for="site-search">Search</label>
+      <input id="site-search" type="text" class="search-input" placeholder="Search..." />
     </div>
 
     <div class="topbar-right">
@@ -38,24 +60,23 @@
   <main>
 
     <!-- ========= HERO: 25 YEARS ========= -->
-    <section class="hero hero-main">
+    <section class="hero hero-main" aria-labelledby="hero-title">
       <div class="hero-overlay">
-        <div class="footer-logo" aria-label="NASA logo in footer">
-          <img src="nasa-logo.png" alt="NASA footer logo" class="logo-img">
+        <div class="hero-logo">
+          <img src="nasa-logo.png" alt="NASA logo" class="logo-img">
         </div>
-
 
         <div class="hero-main-content">
           <div class="hero-text">
             <!-- Нүүр хуудасны үндсэн ганц H1 -->
-            <h1>25 Years of<br>Scientific Discovery</h1>
+            <h1 id="hero-title">25 Years of<br>Scientific Discovery</h1>
             <p>
               November marks 25 years of human presence aboard the International
               Space Station. Since the first crew arrived on Nov. 2, 2000, NASA
               and its partners have conducted thousands of research investigations
               to advance exploration of the Moon and Mars and benefit life on Earth.
             </p>
-            <button class="btn btn-red">
+            <button class="btn btn-red" type="button">
               International Space Station
             </button>
           </div>
@@ -79,9 +100,9 @@
     </section>
 
     <!-- ========= FEATURED NEWS ========= -->
-    <section class="featured">
+    <section class="featured" aria-labelledby="featured-title">
       <div class="featured-header">
-        <h2>Featured News</h2>
+        <h2 id="featured-title">Featured News</h2>
         <a href="#" class="featured-right-link">Recently Published ➜</a>
       </div>
 
@@ -162,17 +183,16 @@
     </section>
 
     <!-- ========= HERO: BUILDING ROMAN ========= -->
-    <section class="hero hero-roman">
+    <section class="hero hero-roman" aria-labelledby="roman-title">
       <div class="hero-roman-overlay">
         <div class="hero-text hero-roman-text">
-          <!-- H1 биш H2 болголоо (SEO structure) -->
-          <h2>Building Roman</h2>
+          <h2 id="roman-title">Building Roman</h2>
           <p>
             NASA’s nearly complete Nancy Grace Roman Space Telescope has
             made another set of critical strides toward launch. Recent tests
             ensure the mission will be ready for its journey.
           </p>
-          <button class="link-arrow">
+          <button class="link-arrow" type="button">
             Nancy Grace Roman Space Telescope ➜
           </button>
         </div>
@@ -180,9 +200,9 @@
     </section>
 
     <!-- ========= WELCOME TO THE UNIVERSE ========= -->
-    <section class="universe">
+    <section class="universe" aria-labelledby="universe-title">
       <div class="section-header">
-        <h2>Welcome to the Universe</h2>
+        <h2 id="universe-title">Welcome to the Universe</h2>
         <a href="#" class="link-arrow">Discover More ➜</a>
       </div>
 
@@ -203,10 +223,10 @@
     </section>
 
     <!-- ========= IMAGE OF THE DAY ========= -->
-    <section class="image-of-day">
+    <section class="image-of-day" aria-labelledby="iod-title">
       <div class="iod-text">
         <p class="iod-label">TODAY</p>
-        <h2>Image Of The Day</h2>
+        <h2 id="iod-title">Image Of The Day</h2>
         <h3>Red Spider Nebula</h3>
         <p>
           Using its Near-Infrared Camera, NASA’s James Webb Space Telescope
@@ -221,9 +241,9 @@
     </section>
 
     <!-- ========= IMAGE GALLERIES ========= -->
-    <section class="image-galleries">
+    <section class="image-galleries" aria-labelledby="galleries-title">
       <div class="section-header">
-        <h2>Image Galleries</h2>
+        <h2 id="galleries-title">Image Galleries</h2>
         <a href="#" class="link-arrow">More NASA Images ➜</a>
       </div>
 
@@ -247,10 +267,10 @@
     </section>
 
     <!-- ========= NEWSLETTER BANNER ========= -->
-    <section class="newsletter-banner">
+    <section class="newsletter-banner" aria-labelledby="newsletter-title">
       <div class="newsletter-overlay">
         <div class="newsletter-text">
-          <h2>Explore the Universe from your Inbox</h2>
+          <h2 id="newsletter-title">Explore the Universe from your Inbox</h2>
           <p>
             Stay up-to-date on the latest news from NASA – from Earth to the Moon,
             the Solar System and beyond.
@@ -261,10 +281,10 @@
     </section>
 
     <!-- ========= ARTEMIS / SEND YOUR NAME ========= -->
-    <section class="artemis">
+    <section class="artemis" aria-labelledby="artemis-title">
       <div class="artemis-text">
         <p class="artemis-label">Artemis</p>
-        <h2>Send Your Name Around the Moon</h2>
+        <h2 id="artemis-title">Send Your Name Around the Moon</h2>
         <p>
           Artemis II will test NASA’s deep space capabilities as humans fly on the
           Space Launch System rocket and Orion spacecraft for the first time.
@@ -278,8 +298,8 @@
     </section>
 
     <!-- ========= MORE TOPICS FROM NASA ========= -->
-    <section class="more-topics">
-      <h2>More Topics from NASA</h2>
+    <section class="more-topics" aria-labelledby="topics-title">
+      <h2 id="topics-title">More Topics from NASA</h2>
       <div class="topics-grid">
         <article class="topic-card" style="background-image: url('topic-missions.png');">
           <h3>Missions</h3>

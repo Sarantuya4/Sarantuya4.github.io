@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+    <meta charset="UTF-8">
+    <title>5 бодлого </title>
+</head>
+<body>
+<script>
+// 1-р бодлого
+let n = parseInt(prompt(
+"1-р бодлого:\n" +
+"Гараас өгсөн тооны цифрүүдийн нийлбэр нь палиндром мөн эсэхийг шалга.\n\n" +
+"Тоо оруулна уу:"
+));
+
+document.writeln("<h2>1-р бодлого</h2>");
+
+let origN = n;
+if (n < 0) n = -n;
+let sum = 0;
+while (n > 0) {
+    sum += n % 10;
+    n = parseInt(n / 10);
+}
+let temp = sum, rev = 0;
+while (temp > 0) {
+    rev = rev * 10 + temp % 10;
+    temp = parseInt(temp / 10);
+}
+
+document.writeln("Оруулсан тоо: " + origN + "<br>");
+document.writeln("Цифрүүдийн нийлбэр: " + sum + "<br>");
+if (sum === rev)
+    document.writeln(" Нийлбэр палиндром байна<br>");
+else
+    document.writeln("Нийлбэр палиндром биш байна<br>");
+
+
+// 2-р бодлого
+let d = parseFloat(prompt(
+"2-р бодлого:\n" +
+"Чоно 25 км/ц хурдтай, туулай 18 км/ц хурдтай.\n" +
+"Гараас өгсөн зайтай байхад хэдэн минут хэдэн секундын дараа гүйцэх вэ?\n\n" +
+"Эхний зайг (км) оруулна уу:"
+));
+
+document.writeln("<h2>2-р бодлого</h2>");
+let hours = d / 7;
+let totalSec = Math.round(hours * 3600);
+let minutes = parseInt(totalSec / 60);
+let seconds = totalSec % 60;
+
+document.writeln(minutes + " минут " + seconds + " секунд<br>");
+
+
+// 3-р бодлого
+let t = parseInt(prompt(
+"3-р бодлого:\n" +
+"9 давхар, 3 орцтой, давхартаа 4 айлтай байшин байна.\n" +
+"Гараас өгсөн тоот нь хэддүгээр орц, давхар, хаалга вэ?\n\n" +
+"Тоот оруул (1-108):"
+));
+
+document.writeln("<h2>3-р бодлого</h2>");
+if (t < 1 || t > 108) {
+    document.writeln("Ийм тоот байхгүй!<br>");
+} else {
+    let entrance = parseInt((t - 1) / 36) + 1;
+    let index = (t - 1) % 36;
+    let floor = parseInt(index / 4) + 1;
+    let door = index % 4 + 1;
+    document.writeln(entrance + "-р орц, " + floor + "-р давхар, " + door + "-р хаалга<br>");
+}
+document.writeln("<hr>");
+
+
+// 4-р бодлого
+let arr = [12, 18, 30, 42, 24];
+
+document.writeln("<h2>4-р бодлого</h2>");
+document.writeln("Array-д өгөгдсөн 5 тооны хамгийн бага ерөнхий хуваагдагчийг ол.<br><br>");
+
+document.writeln("Өгөгдсөн тоонууд: " + arr.join(", ") + "<br>");
+
+let L = arr[0];
+
+for (let i = 1; i < arr.length; i++) {
+    let a = L, b = arr[i];
+
+    while (b !== 0) {
+        let r = a % b;
+        a = b;
+        b = r;
+    }
+
+    let gcd = a;
+    L = (L * arr[i]) / gcd;
+}
+
+document.writeln("ХБЕХ = " + L + "<br>");
+
+
+// 5-р бодлого
+let x = parseFloat(prompt(
+"5-р бодлого:\n" +
+"Вэб сайт руу өглөө ороход: гараас өгсөн тооны 2 зэрэг\n" +
+"Орой ороход: гараас өгсөн тооны язгуур ол.\n\n" +
+"Тоо оруулна уу:"
+));
+
+document.writeln("<h2>5-р бодлого</h2>");
+
+let hour = new Date().getHours();
+if (hour < 15) {
+    document.writeln("Өглөө тул: " + x + "^2 = " + x*x + "<br>");
+} else {
+    if (x < 0)
+        document.writeln("Сөрөг тооны язгуур бодохгүй!<br>");
+    else
+        document.writeln("Орой тул: √" + x + " = " + Math.sqrt(x) + "<br>");
+}
+
+document.writeln("<hr>");
+document.writeln("<h3>Бүх бодлого дууслаа!</h3>");
+
+</script>
+</body>
+</html>

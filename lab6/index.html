@@ -2,7 +2,18 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>NASA Homepage Clone (Flexbox)</title>
+
+  <!-- SEO сайжруулалт -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NASA Homepage Clone – Space News & Images (Lab 6)</title>
+
+  <meta name="description" content="NASA.gov-оос сэдэвлэсэн сансар огторгуйн нүүр хуудас. Featured news, image of the day, Artemis missions, space topics, галерей, бүгд Flexbox layout ашиглан хийгдсэн." />
+  <meta name="keywords" content="NASA, space, astronomy, lab6, flexbox, homepage clone, science, universe" />
+  <meta name="robots" content="index,follow" />
+
+  <!-- favicon (жижиг лого) – өөрийн дуртай жижиг зургийг ашиглаж болно -->
+  <link rel="icon" type="image/png" href="thumb1.jpg" />
+
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -18,7 +29,7 @@
     </div>
 
     <div class="topbar-right">
-      <nav class="top-nav">
+      <nav class="top-nav" aria-label="Main navigation">
         <a href="#">News &amp; Events ▾</a>
         <a href="#">Multimedia ▾</a>
         <a href="#" class="nasa-plus">NASA+ <span class="live-pill">LIVE</span></a>
@@ -31,13 +42,13 @@
     <!-- ========= HERO: 25 YEARS ========= -->
     <section class="hero hero-main">
       <div class="hero-overlay">
-        <div class="hero-logo">
-          <!-- хүсвэл энд NASA лого зураг оруулж болно -->
+        <div class="hero-logo" aria-label="NASA logo">
           NASA
         </div>
 
         <div class="hero-main-content">
           <div class="hero-text">
+            <!-- Нүүр хуудасны үндсэн ганц H1 -->
             <h1>25 Years of<br>Scientific Discovery</h1>
             <p>
               November marks 25 years of human presence aboard the International
@@ -70,92 +81,93 @@
 
     <!-- ========= FEATURED NEWS ========= -->
     <section class="featured">
-  <div class="featured-header">
-    <h2>Featured News</h2>
-    <a href="#" class="featured-right-link">Recently Published ➜</a>
-  </div>
-
-  <!-- ДЭЭД 3 КАРТ -->
-  <div class="featured-grid">
-    <!-- Зүүн том карт -->
-    <article class="feat-card feat-card-large feat-1">
-      <div class="feat-text">
-        <p class="feat-meta">BLOG • 2 MIN READ</p>
-        <h3>NASA’s OSIRIS-APEX Spacecraft Slingshots Past Earth</h3>
+      <div class="featured-header">
+        <h2>Featured News</h2>
+        <a href="#" class="featured-right-link">Recently Published ➜</a>
       </div>
-    </article>
 
-    <!-- Дунд том карт -->
-    <article class="feat-card feat-card-large feat-2">
-      <div class="feat-text">
-        <p class="feat-meta">BLOG • 4 MIN READ</p>
-        <h3>Crew Works Wide Variety of Research and Awaits New Arrivals</h3>
-      </div>
-    </article>
+      <!-- ДЭЭД 3 КАРТ -->
+      <div class="featured-grid">
+        <!-- Зүүн том карт -->
+        <article class="feat-card feat-card-large feat-1">
+          <div class="feat-text">
+            <p class="feat-meta">BLOG • 2 MIN READ</p>
+            <h3>NASA’s OSIRIS-APEX Spacecraft Slingshots Past Earth</h3>
+          </div>
+        </article>
 
-    <!-- Баруун багана – 2 жижиг карт -->
-    <div class="feat-column-small">
-      <article class="feat-card feat-small feat-3">
-        <div class="feat-text">
-          <p class="feat-meta">ARTICLE • 3 MIN READ</p>
-          <h3>CHAPEA Crew Begins Second Mission in Mars Habitat</h3>
+        <!-- Дунд том карт -->
+        <article class="feat-card feat-card-large feat-2">
+          <div class="feat-text">
+            <p class="feat-meta">BLOG • 4 MIN READ</p>
+            <h3>Crew Works Wide Variety of Research and Awaits New Arrivals</h3>
+          </div>
+        </article>
+
+        <!-- Баруун багана – 2 жижиг карт -->
+        <div class="feat-column-small">
+          <article class="feat-card feat-small feat-3">
+            <div class="feat-text">
+              <p class="feat-meta">ARTICLE • 3 MIN READ</p>
+              <h3>CHAPEA Crew Begins Second Mission in Mars Habitat</h3>
+            </div>
+          </article>
+
+          <article class="feat-card feat-small feat-4">
+            <div class="feat-text">
+              <p class="feat-meta">BLOG • 2 MIN READ</p>
+              <h3>NASA’s TROPICS Completes Storm-Studying Mission</h3>
+            </div>
+          </article>
         </div>
-      </article>
-
-      <article class="feat-card feat-small feat-4">
-        <div class="feat-text">
-          <p class="feat-meta">BLOG • 2 MIN READ</p>
-          <h3>NASA’s TROPICS Completes Storm-Studying Mission</h3>
-        </div>
-      </article>
-    </div>
-  </div>
-
-  <!-- ДООД БӨГЖТЭЙ ЖИЖИГ ЛИНКҮҮД -->
-  <div class="featured-bottom-row">
-    <article class="feat-bottom-item">
-      <div class="feat-bottom-thumb"></div>
-      <div class="feat-bottom-text">
-        <p class="feat-meta">5 MIN READ</p>
-        <h4>NASA Orbiter Shines New Light on Long-Running Martian Mystery</h4>
-        <p class="feat-tag">ARTICLE</p>
       </div>
-    </article>
 
-    <article class="feat-bottom-item">
-      <div class="feat-bottom-thumb"></div>
-      <div class="feat-bottom-text">
-        <p class="feat-meta">2 MIN READ</p>
-        <h4>NASA’s Mars-bound ESCAPADE Mission Captures First ‘Selfies’</h4>
-        <p class="feat-tag">BLOG</p>
-      </div>
-    </article>
+      <!-- ДООД БӨГЖТЭЙ ЖИЖИГ ЛИНКҮҮД -->
+      <div class="featured-bottom-row">
+        <article class="feat-bottom-item">
+          <div class="feat-bottom-thumb" aria-hidden="true"></div>
+          <div class="feat-bottom-text">
+            <p class="feat-meta">5 MIN READ</p>
+            <h4>NASA Orbiter Shines New Light on Long-Running Martian Mystery</h4>
+            <p class="feat-tag">ARTICLE</p>
+          </div>
+        </article>
 
-    <article class="feat-bottom-item">
-      <div class="feat-bottom-thumb"></div>
-      <div class="feat-bottom-text">
-        <p class="feat-meta">5 MIN READ</p>
-        <h4>NASA, NOAA Rank 2025 Ozone Hole as Fifth Smallest Since 1992</h4>
-        <p class="feat-tag">ARTICLE</p>
-      </div>
-    </article>
+        <article class="feat-bottom-item">
+          <div class="feat-bottom-thumb" aria-hidden="true"></div>
+          <div class="feat-bottom-text">
+            <p class="feat-meta">2 MIN READ</p>
+            <h4>NASA’s Mars-bound ESCAPADE Mission Captures First ‘Selfies’</h4>
+            <p class="feat-tag">BLOG</p>
+          </div>
+        </article>
 
-    <article class="feat-bottom-item">
-      <div class="feat-bottom-thumb"></div>
-      <div class="feat-bottom-text">
-        <p class="feat-meta">3 MIN READ</p>
-        <h4>What’s Up: November 2025 Skywatching Tips from NASA</h4>
-        <p class="feat-tag">ARTICLE</p>
+        <article class="feat-bottom-item">
+          <div class="feat-bottom-thumb" aria-hidden="true"></div>
+          <div class="feat-bottom-text">
+            <p class="feat-meta">5 MIN READ</p>
+            <h4>NASA, NOAA Rank 2025 Ozone Hole as Fifth Smallest Since 1992</h4>
+            <p class="feat-tag">ARTICLE</p>
+          </div>
+        </article>
+
+        <article class="feat-bottom-item">
+          <div class="feat-bottom-thumb" aria-hidden="true"></div>
+          <div class="feat-bottom-text">
+            <p class="feat-meta">3 MIN READ</p>
+            <h4>What’s Up: November 2025 Skywatching Tips from NASA</h4>
+            <p class="feat-tag">ARTICLE</p>
+          </div>
+        </article>
       </div>
-    </article>
-  </div>
-</section>
+    </section>
 
     <!-- ========= HERO: BUILDING ROMAN ========= -->
     <section class="hero hero-roman">
       <div class="hero-roman-overlay">
         <div class="hero-text hero-roman-text">
-          <h1>Building Roman</h1>
+          <!-- H1 биш H2 болголоо (SEO structure) -->
+          <h2>Building Roman</h2>
           <p>
             NASA’s nearly complete Nancy Grace Roman Space Telescope has
             made another set of critical strides toward launch. Recent tests
@@ -205,7 +217,7 @@
         <a href="#" class="link-arrow">Browse Image Archive ➜</a>
       </div>
       <div class="iod-image">
-        <img src="potm2510a.jpg" alt="Red Spider Nebula">
+        <img src="potm2510a.jpg" alt="Red Spider Nebula image from James Webb Space Telescope">
       </div>
     </section>
 
@@ -232,7 +244,6 @@
           <h3>Space Launch System Rocket Gallery</h3>
           <p class="gallery-meta">12 IMAGES</p>
         </article>
-        
       </div>
     </section>
 
@@ -263,7 +274,7 @@
         <a href="#" class="link-arrow">Artemis II Boarding Pass ➜</a>
       </div>
       <div class="artemis-image">
-        <img src="artemis.png" alt="Artemis launch system">
+        <img src="artemis.png" alt="Artemis II launch system inside hangar">
       </div>
     </section>
 
@@ -304,7 +315,7 @@
   <footer class="footer-main">
     <div class="footer-top">
       <div class="footer-col footer-about">
-        <div class="footer-logo">NASA</div>
+        <div class="footer-logo" aria-label="NASA logo in footer">NASA</div>
         <h3>National Aeronautics and Space Administration</h3>
         <p>
           NASA explores the unknown in air and space, innovates for the benefit of
@@ -346,7 +357,7 @@
 
       <div class="footer-col footer-social">
         <h4>Follow NASA</h4>
-        <div class="social-row">
+        <div class="social-row" aria-hidden="true">
           <span>●</span><span>●</span><span>●</span><span>●</span>
         </div>
         <a href="#" class="footer-link">More NASA Social Accounts</a><br>
@@ -366,7 +377,7 @@
       </div>
       <p class="footer-meta">
         Page Last Updated: Nov 25, 2025 &nbsp;|&nbsp;
-        Page Editor: Your Name Here
+        Page Editor: Д.Сарантуяа
       </p>
     </div>
   </footer>

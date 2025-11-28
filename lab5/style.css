@@ -262,3 +262,9 @@ body {
     margin-top: 30px !important;
   }
 }
+@media (max-width: 600px) {
+  .seven.columns {
+    padding-top: 25px !important;
+  }
+}
+

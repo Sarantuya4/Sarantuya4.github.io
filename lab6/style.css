@@ -23,7 +23,6 @@ body {
   border: 0;
 }
 
-/* ========== TOP BAR ========== */
 
 .topbar {
   display: flex;
@@ -94,7 +93,7 @@ body {
   border-radius: 999px;
 }
 
-/* Common section helpers */
+
 
 main {
   background: #f9fafb;
@@ -118,7 +117,6 @@ main {
   font-size: 14px;
 }
 
-/* ========== HERO MAIN ========== */
 
 .hero-main {
   min-height: 80vh;
@@ -142,7 +140,6 @@ main {
   justify-content: space-between;
 }
 
-/* ЛОГО – дунд төвлөрүүлсэн */
 .hero-logo {
   align-self: center;
   margin-bottom: 40px;
@@ -151,7 +148,7 @@ main {
   align-items: center;
 }
 
-/* NASA logo зураг */
+
 .logo-img {
   width: 80px;
   height: auto;
@@ -196,7 +193,7 @@ main {
   font-weight: 600;
 }
 
-/* hero bottom links */
+
 
 .hero-links-row {
   display: flex;
@@ -224,8 +221,6 @@ main {
   font-size: 14px;
   color: #f9fafb;
 }
-
-/* ========== FEATURED NEWS ========== */
 
 .featured {
   padding: 40px 64px;
@@ -269,13 +264,11 @@ main {
   padding: 18px 18px 24px;
 }
 
-/* том 2 карт – зүүн ба дунд */
 .feat-card-large {
   flex: 1 1 0;
   min-height: 340px;
 }
 
-/* баруун цуваа */
 .feat-column-small {
   flex: 0 0 260px;
   display: flex;
@@ -283,7 +276,7 @@ main {
   gap: 16px;
 }
 
-/* жижиг 2 карт */
+
 .feat-small {
   min-height: 160px;
 }
@@ -302,7 +295,7 @@ main {
   background-image: url("feat4.jpg");
 }
 
-/* зургийг бүрэн дүүргэх */
+
 .feat-1,
 .feat-2,
 .feat-3,
@@ -311,7 +304,6 @@ main {
   background-position: center;
 }
 
-/* доод талаас градиент */
 .feat-card::before {
   content: "";
   position: absolute;
@@ -338,7 +330,7 @@ main {
   line-height: 1.4;
 }
 
-/* доод жижиг item-ууд */
+
 
 .featured-bottom-row {
   display: flex;
@@ -354,7 +346,6 @@ main {
   align-items: center;
 }
 
-/* Thumbnail images */
 .feat-bottom-item:nth-child(1) .feat-bottom-thumb {
   background-image: url("thumb1.jpg");
 }
@@ -371,7 +362,7 @@ main {
   background-image: url("thumb4.png");
 }
 
-/* бүх дугуй дүрс дээр нийтлэг тохиргоо */
+
 .feat-bottom-thumb {
   width: 52px;
   height: 52px;
@@ -392,7 +383,6 @@ main {
   color: #6b7280;
 }
 
-/* ========== HERO ROMAN ========== */
 
 .hero-roman {
   min-height: 70vh;
@@ -429,7 +419,6 @@ main {
   margin-bottom: 18px;
 }
 
-/* ========== UNIVERSE CARDS ========== */
 
 .universe {
   padding: 40px 64px;
@@ -468,7 +457,6 @@ main {
   z-index: 1;
 }
 
-/* ========== IMAGE OF THE DAY ========== */
 
 .image-of-day {
   padding: 40px 64px;
@@ -516,7 +504,6 @@ main {
   border-radius: 8px;
 }
 
-/* ========== IMAGE GALLERIES ========== */
 
 .image-galleries {
   padding: 40px 64px;
@@ -554,7 +541,6 @@ main {
   padding: 4px 12px 10px;
 }
 
-/* ========== NEWSLETTER BANNER ========== */
 
 .newsletter-banner {
   min-height: 60vh;
@@ -590,7 +576,6 @@ main {
   margin-bottom: 18px;
 }
 
-/* ========== ARTEMIS SECTION ========== */
 
 .artemis {
   padding: 40px 64px;
@@ -631,7 +616,6 @@ main {
   border-radius: 8px;
 }
 
-/* ========== MORE TOPICS ========== */
 
 .more-topics {
   padding: 40px 64px 56px;
@@ -674,7 +658,7 @@ main {
   font-size: 20px;
 }
 
-/* ========== FOOTER ========== */
+
 
 .footer-main {
   background: #020202;
@@ -762,7 +746,6 @@ main {
   color: #6b7280;
 }
 
-/* ========== RESPONSIVE (basic) ========== */
 
 @media (max-width: 900px) {
   .hero-overlay {
